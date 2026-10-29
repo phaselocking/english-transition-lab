@@ -10,7 +10,11 @@
 
 本项目是无构建步骤的静态网页，可以直接使用 GitHub Pages 发布。将仓库的 Pages 发布源设为 `main` 分支、`/(root)` 根目录即可；后续推送到 `main` 后，GitHub 会重新部署网页。
 
-**当前在线访问状态：** Pages 已启用，首次构建成功；但项目链接继承了账号原有的 `phaselocking.cc` 自定义域名，该域名目前将项目路径导向个人站的 404 页面。因此暂时不能把它作为可用的体验链接分享。若保留原个人站，需要为本项目配置独立子域名及对应 DNS。此问题不影响源码下载与本地运行。[GitHub 域名继承说明](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/about-custom-domains-and-github-pages#using-a-custom-domain-across-multiple-repositories)
+在线体验：[imonit.top](http://imonit.top/)。项目已绑定独立域名，四条 A 记录已生效，并通过线上页面与分支交互检查。
+
+首次上线检查时（2026-10-30），HTTP 已可访问，GitHub 的 HTTPS 证书尚未就绪。证书签发后可启用 Enforce HTTPS，并把这里的访问链接更新为 HTTPS。[GitHub HTTPS 说明](https://docs.github.com/en/pages/getting-started-with-github-pages/securing-your-github-pages-site-with-https)
+
+仓库根目录的 `CNAME` 文件保存 `imonit.top`，后续提交时应保留它。域名解析由阿里云管理，网页由 GitHub Pages 托管，访问网站不依赖本地电脑开机。
 
 仓库公开的是原型源码和演示截图。网页仍只在浏览器内存中处理选择，不会因为上线而开始收集数据。
 
