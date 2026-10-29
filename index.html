@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#254c3f">
+  <meta name="description" content="一项关于中外合作办学学生英语学习过渡的交互式研究原型。走进情境，换个角度，留下一个值得继续思考的问题。">
+  <title>English Transition Lab · 英语学习过渡实验室</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='12' fill='%23254c3f'/%3E%3Cpath d='M11 10v20h18M11 20h14M11 10h18' fill='none' stroke='%23f7f7ef' stroke-width='3'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css">
+  <script src="content.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#journey">跳到情境体验</a>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="English Transition Lab 首页">
+      <svg viewBox="0 0 42 42" aria-hidden="true"><path d="M9 9v24h24M9 21h19M9 9h24"/><circle cx="32" cy="21" r="3"/></svg>
+      <span>ENGLISH<br><strong>TRANSITION LAB</strong></span>
+    </a>
+    <nav aria-label="主要区域">
+      <a href="#journey" data-nav="journey"><span>01</span> 进入情境</a>
+      <a href="#explore" data-nav="explore"><span>02</span> 探索空间</a>
+      <a href="#journal" data-nav="journal"><span>03</span> 研究手记</a>
+    </nav>
+    <span class="edition">一个生长中的实验 <span class="edition-version">v0.1</span></span>
+  </header>
+
+  <main id="top">
+    <section class="hero page-width" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="live-dot"></span> 英语学习过渡实验室</div>
+        <h1 id="hero-title">从「听懂」<br>到<span class="underlined">「参与」。</span></h1>
+        <p class="hero-description">换一种方式，走近英语学习中的真实处境。<br>在语言之间，也在自己的节奏里。</p>
+        <div class="hero-actions"><a class="button button-primary" href="#journey">走进这间课堂 <span aria-hidden="true">↗</span></a><span class="small-note">约 3 分钟 · 没有标准答案</span></div>
+        <p class="hero-footnote"><span aria-hidden="true">↳</span> 一项关于中外合作办学学生学习经历的进行中研究</p>
+      </div>
+      <figure class="hero-figure">
+        <svg class="seminar-art" viewBox="0 0 560 440" role="img" aria-labelledby="art-title art-desc">
+          <title id="art-title">一张等待你加入的 seminar 圆桌</title>
+          <desc id="art-desc">椭圆课堂桌旁有六个座位，一个空位用虚线表示。桌上有笔记、一本书和发言气泡，象征不同的参与方式。</desc>
+          <defs><pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse"><path d="M24 0H0V24" fill="none" stroke="#d7dfd1" stroke-width=".6"/></pattern></defs>
+          <path d="M64 64Q238 5 455 63Q518 87 522 228Q535 356 426 390Q265 442 99 365Q16 321 36 195Q37 100 64 64Z" fill="#e8eddf"/>
+          <path d="M64 64Q238 5 455 63Q518 87 522 228Q535 356 426 390Q265 442 99 365Q16 321 36 195Q37 100 64 64Z" fill="url(#grid)" opacity=".6"/>
+          <ellipse cx="278" cy="231" rx="199" ry="132" fill="none" stroke="#a9b8a0" stroke-dasharray="4 7"/>
+          <g fill="#c6d3bc" stroke="#59755b" stroke-width="1.5">
+            <rect x="158" y="101" width="55" height="44" rx="18" transform="rotate(-24 185 123)"/>
+            <rect x="311" y="98" width="55" height="44" rx="18" transform="rotate(18 338 120)"/>
+            <rect x="417" y="201" width="49" height="56" rx="18" transform="rotate(-9 441 229)"/>
+            <rect x="317" y="317" width="55" height="44" rx="18" transform="rotate(-20 344 339)"/>
+            <rect x="90" y="202" width="49" height="56" rx="18" transform="rotate(8 114 230)"/>
+          </g>
+          <rect x="165" y="315" width="56" height="46" rx="18" fill="#f7f8ef" stroke="#547353" stroke-width="1.5" stroke-dasharray="4 4" transform="rotate(18 193 338)"/>
+          <ellipse cx="281" cy="229" rx="153" ry="99" fill="#d7dfcb" stroke="#456447" stroke-width="1.7"/>
+          <ellipse cx="281" cy="223" rx="153" ry="99" fill="#f7f7ed" stroke="#456447" stroke-width="1.7"/>
+          <g transform="translate(218 175) rotate(-12)"><rect width="40" height="53" rx="2" fill="#eee5cb" stroke="#a79f79"/><path d="M8 13H31M8 21H29M8 29H32M8 37H23" stroke="#aaa181" stroke-width="1.5"/></g>
+          <g transform="translate(327 238) rotate(14)"><path d="M0 0Q20 -6 38 0V44Q20 38 0 44Q-18 38 -36 44V0Q-18 -6 0 0Z" fill="#e2e7d9" stroke="#7c8f73"/><path d="M0 1V43M8 11H29M8 19H27M8 27H30M-28 10H-9M-28 18H-9M-28 26H-10" stroke="#9aa58f"/></g>
+          <g transform="translate(179 248) rotate(24)"><rect width="5" height="40" rx="2" fill="#8b9f77"/><path d="m0 40 2.5 7L5 40" fill="#b99468"/></g>
+          <circle cx="362" cy="181" r="12" fill="#fffdf6" stroke="#8a9b7c"/><path d="M375 176q13 -1 7 10h-8" fill="none" stroke="#8a9b7c"/>
+          <g transform="translate(287 55) rotate(3)"><path d="M0 0H170Q181 0 181 11V55Q181 66 170 66H46L29 82L31 66H0Q-11 66 -11 55V11Q-11 0 0 0" fill="#fffdf5" stroke="#506c51" stroke-width="1.3"/><text x="14" y="29" font-family="Georgia,serif" font-size="19" fill="#304f3a">What do you think?</text><path d="M13 43H119" stroke="#b2bea5"/></g>
+          <g fill="#456447" font-family="sans-serif" font-size="12"><text x="40" y="90">听见 / LISTEN</text><text x="400" y="342">试着表达 / SPEAK</text></g>
+          <path d="M120 365Q139 386 173 367" fill="none" stroke="#78906a" stroke-width="1.2"/><text x="82" y="396" font-family="Georgia,serif" font-size="16" font-style="italic" fill="#5c7350">a place for your voice</text>
+          <path d="m189 373 2 -16 -13 8" fill="none" stroke="#78906a" stroke-width="1.2"/>
+          <text x="438" y="136" font-family="Georgia,serif" font-size="35" fill="#9ba98c">*</text>
+        </svg>
+        <figcaption><span>FIELD NOTE — 001</span> 你的位置，不只有一种。</figcaption>
+      </figure>
+    </section>
+
+    <div class="invitation-strip"><div class="page-width"><span>这里从一个情境开始，而不是一张问卷。</span><span>探索 <i>→</i> 思考 <i>→</i> 再看一眼</span></div></div>
+
+    <section id="journey" class="page-width section" aria-labelledby="journey-title">
+      <div class="section-heading"><div><p class="section-index">01 / THE FIRST STEP</p><h2 id="journey-title">门已经开了，<br>你会怎样加入？</h2></div><p class="section-description">想象这是你的第一节全英文 seminar。<br>选一个接近此刻的回应，看看故事如何展开。<br><span class="content-label">模拟情境</span> 不评判，也不推断你的英语水平。</p></div>
+      <div id="journey-app" class="journey-shell" aria-live="polite" aria-atomic="false"></div>
+      <p class="privacy-note"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 2 3 5v5q0 5 7 8 7-3 7-8V5Z"/><path d="m7 10 2 2 4-4"/></svg> 只在此刻探索：选择不会被收集、发送或保存，刷新页面即清空。</p>
+      <noscript><p class="no-script">请启用浏览器 JavaScript，以体验情境分支。此原型不会保存你的选择。</p></noscript>
+    </section>
+
+    <section id="explore" class="explore-section section" aria-labelledby="explore-title"><div class="page-width">
+      <div class="section-heading"><div><p class="section-index">02 / ROOM TO EXPLORE</p><h2 id="explore-title">困难，不只有一种形状。</h2></div><p class="section-description">有时卡在一句指令，有时卡在开口前的一秒。<br>在几个片刻里停留，试着换一种回应。</p></div>
+      <div id="topic-tabs" class="topic-tabs" role="tablist" aria-label="探索一个学习片刻"></div>
+      <div id="topic-panel" class="topic-panel" role="tabpanel" tabindex="0" aria-live="polite"></div>
+      <div class="evidence-legend"><span class="legend-title">阅读这些内容时</span><span><i class="legend-dot example"></i>模拟情境：为体验而写</span><span><i class="legend-dot reference"></i>参考资料：可查看出处</span><span><i class="legend-dot question"></i>开放问题：仍需调查</span></div>
+    </div></section>
+
+    <section id="journal" class="page-width section journal-section" aria-labelledby="journal-title">
+      <div class="section-heading"><div><p class="section-index">03 / AN OPEN NOTEBOOK</p><h2 id="journal-title">研究，也在学习中。</h2></div><p class="section-description">把缘起、疑问和下一步摊开。<br>这本手记会继续写下去。</p></div>
+      <div class="journal-layout"><aside class="journal-aside"><span class="notebook-symbol" aria-hidden="true">✳</span><p>从自身的困惑出发，<br>但不把自身当作全部。</p><span class="small-note">研究起步阶段<br>尚未开展访谈或形成调查发现</span></aside><div id="journal-entries" class="journal-entries"></div></div>
+      <div class="research-footer"><span class="live-dot"></span><p>下一步：一起讨论这个原型，再决定怎样邀请真实的经验进入研究。</p><a href="#journey" data-restart>再走一次 <span aria-hidden="true">↗</span></a></div>
+    </section>
+  </main>
+  <footer class="site-footer page-width"><div><span class="footer-brand">English Transition Lab</span><p>在语言之间，留一个继续思考的空间。</p></div><div><span>课程研究原型 · 2026</span><p>本地运行 / 无数据收集 / Version 0.1</p></div><a href="#top" aria-label="返回页面顶部">回到顶部 ↑</a></footer>
+</body>
+</html>

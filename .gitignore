@@ -1,0 +1,13 @@
+# Local editor, dependency and system files
+node_modules/
+.codex/
+.agents/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Never publish local environment settings
+.env
+.env.*
+!.env.example
+*.log
